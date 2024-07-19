@@ -3,8 +3,6 @@
   width: 40vh;
 }
 
-
-
 .custom-btn {
   width: 130px;
   height: 40px;
@@ -196,7 +194,6 @@
   margin-top: 30px;
 }
 .btn-12 span {
- 
   display: block;
   position: absolute;
   width: 130px;
@@ -213,7 +210,7 @@
   transition: all 0.3s;
 }
 
-.darkbutton{
+.darkbutton {
   background: rgb(0, 172, 238);
   background: linear-gradient(
     0deg,
@@ -222,14 +219,9 @@
   );
 }
 
-.lightbutton{
-
-  background:#141e30;
-  background: linear-gradient(
-    0deg,
-    #141e30 0%,
-    #243b55 100%
-  );
+.lightbutton {
+  background: #141e30;
+  background: linear-gradient(0deg, #141e30 0%, #243b55 100%);
 }
 .btn-12 span:nth-child(1) {
   box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,

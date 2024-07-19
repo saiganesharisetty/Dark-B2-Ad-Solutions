@@ -17,7 +17,9 @@
       rel="stylesheet"
     />
 
-    <!-- Icon Font Stylesheet -->
+    <!-- Icon Font Stylesheet
+     <link rel="stylesheet" href="buttonstyler.css" /> 
+    -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -33,12 +35,12 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link id="cssboot" href="css/bootstrapdark.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet
     <link href="css/style.css" rel="stylesheet" /> 
     -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link id="cssnormal" href="css/styledark.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -163,12 +165,11 @@
               </div>
             </div>
             <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+
+            <button id="theme-switcher" class="custom-btn btn-12">
+              <span>Click Me</span><span>Change Theme?</span>
+            </button>
           </div>
-          <!-- 
-          <button class="custom-btn btn-5">
-            <span class="topbtn">Read More</span>
-          </button>
-          -->
         </div>
       </nav>
 
@@ -2407,5 +2408,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="theameswitcher.js"></script>
   </body>
 </html>

@@ -10,6 +10,8 @@
 #headingtop {
   height: auto;
   width: auto;
+  margin-top: -20px;
+  margin-bottom: -20px;
 }
 #about-1 {
   background: rgb(250, 246, 246);
@@ -201,12 +203,17 @@
 }
 
 .navbar-light .navbar-brand img {
-  max-height: 60px;
+  max-height: 70px;
   transition: 0.5s;
 }
 
 .sticky-top.navbar-light .navbar-brand img {
   max-height: 45px;
+}
+
+.navbar-brand img {
+  height: 180%;
+  width: 1450%;
 }
 
 .navbar .dropdown-toggle::after {

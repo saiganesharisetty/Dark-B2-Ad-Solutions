@@ -14,6 +14,7 @@
   height: auto;
   width: auto;
 }
+
 #spinner.show {
   transition: opacity 0.5s ease-out, visibility 0s linear 0s;
   visibility: visible;

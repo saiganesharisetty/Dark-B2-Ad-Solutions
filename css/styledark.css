@@ -14,6 +14,10 @@ body {
   transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
   z-index: 99999;
 }
+.buttoncont {
+  height: 20px;
+  width: 40px;
+}
 .phonenum {
   color: aliceblue;
 }
@@ -681,6 +685,7 @@ body {
   padding: 0 25px 25px 25px;
   border-radius: 10px;
   transition: 0.5s;
+  
 }
 
 .team .team-item::before {

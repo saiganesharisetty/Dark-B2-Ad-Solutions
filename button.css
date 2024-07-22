@@ -236,6 +236,76 @@
   width: 100%;
 }
 
+/* 11 */
+.custom-btn2 {
+  width: 130px;
+  height: 40px;
+  color: #0f2027;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+
+  outline: none;
+}
+
+.btn-11 {
+  border: none;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  color: linear-gradient(90deg, #3a47d5 0%, #00d2ff 100%);
+  overflow: hidden;
+  margin-left: 5vh;
+}
+.btn-11:hover {
+  text-decoration: none;
+  color: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+  background: linear-gradient(90deg, #3a47d5 0%, #00d2ff 100%);
+}
+.btn-11:before {
+  position: absolute;
+  content: "Contact";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #4242ad;
+  animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11:hover {
+}
+.btn-11:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes shiny-btn1 {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
 /* 12 */
 .btn-12 {
   position: relative;

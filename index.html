@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>B2 AdAgency</title>
+    <title>B2 AD Solutions</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
@@ -24,6 +24,11 @@
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
       rel="stylesheet"
@@ -227,8 +232,8 @@
                 <div class="col-lg-0 col-xl-5"></div>
                 <div class="col-xl-7 animated fadeInLeft">
                   <div class="text-sm-center text-md-end">
-                    <h4 class="text-primary text-uppercase fw-bold mb-4">
-                      Welcome To B2 AddAgency
+                    <h4 class="text-custom1 text-uppercase fw-bold mb-4">
+                      Welcome to b2 Ad solutions
                     </h4>
                     <h1 class="display-4 text-uppercase text-white mb-4">
                       Ideas into Impactful Campaigns
@@ -301,8 +306,8 @@
               <div class="row g-5">
                 <div class="col-12 animated fadeInUp">
                   <div class="text-center">
-                    <h4 class="text-primary text-uppercase fw-bold mb-4">
-                      Welcome To B2 AdAgency
+                    <h4 class="text-custom1 text-uppercase fw-bold mb-4">
+                      Welcome To B2 Ad solutions
                     </h4>
                     <h1 class="display-4 text-uppercase text-white mb-4">
                       Your Vision, Our Creative Execution
@@ -2039,7 +2044,7 @@
           >
             <div class="team-item">
               <div class="team-img">
-                <img src="img/team-12.jpg" class="img-fluid" alt="" />
+                <img src="img/team-1.jpg" class="img-fluid" alt="" />
               </div>
               <div class="team-title">
                 <h4 class="mb-0">SRI</h4>
@@ -2070,10 +2075,26 @@
               </div>
               -->
 
-              <button class="custom-btn2 btn-11">
+              <button id="contactButton1" class="custom-btn2 btn-11">
                 Contact
                 <div class="dot"></div>
               </button>
+
+              <!-- Contact Modal -->
+              <div id="contactModal1" class="modal">
+                <div class="modal-content">
+                  <span id="close1" class="close">&times;</span>
+                  <br />
+                  <h4>Contact Details</h4>
+                  <p><i class="fa-solid fa-envelope"></i> : SRI@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i> : +91 9948491221</p>
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i> : Hydrabad,
+                    Telangana, India.
+                  </p>
+                </div>
+              </div>
+              <!---->
             </div>
           </div>
           <div
@@ -2112,10 +2133,25 @@
                 ></a>
               </div>
               -->
-              <button class="custom-btn2 btn-11">
+              <button id="contactButton2" class="custom-btn2 btn-11">
                 Contact
                 <div class="dot"></div>
               </button>
+
+              <!-- Contact Modal -->
+              <div id="contactModal2" class="modal">
+                <div class="modal-content">
+                  <span id="close2" class="close">&times;</span>
+                  <br />
+                  <h4>Contact Details</h4>
+                  <p><i class="fa-solid fa-envelope"></i> : Tanuja@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i> : +91 9948491221</p>
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i> : Hydrabad,
+                    Telangana, India.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <div
@@ -2124,7 +2160,7 @@
           >
             <div class="team-item">
               <div class="team-img">
-                <img src="img/team-12.jpg" class="img-fluid" alt="" />
+                <img src="img/team12.jpg" class="img-fluid" alt="" />
               </div>
               <div class="team-title">
                 <h4 class="mb-111">K L N Prasad</h4>
@@ -2154,10 +2190,28 @@
                 ></a>
               </div>
               -->
-              <button class="custom-btn2 btn-11">
+              <button id="contactButton3" class="custom-btn2 btn-11">
                 Contact
                 <div class="dot"></div>
               </button>
+
+              <!-- Contact Modal -->
+              <div id="contactModal3" class="modal">
+                <div class="modal-content">
+                  <span id="close3" class="close">&times;</span>
+                  <br />
+                  <h4>Contact Details</h4>
+                  <p>
+                    <i class="fa-solid fa-envelope"></i> :
+                    klnprasad999@gmail.com
+                  </p>
+                  <p><i class="fa-solid fa-phone"></i> : +91 9948491221</p>
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i> : Hydrabad,
+                    Telangana, India.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <div
@@ -2431,21 +2485,26 @@
             <div class="footer-item">
               <h4 class="text-white mb-4">Contact Info</h4>
               <div class="d-flex align-items-center">
-                <i class="fas fa-map-marker-alt text-primary me-3"></i>
-                <p class="text-white mb-0">123 Street New York.USA</p>
+                <i class="fas fa-map-pin fa-lg"></i>
+                <p class="text-white mb-0">
+                  &nbsp; &nbsp; 123 Street New York.USA
+                </p>
               </div>
               <div class="d-flex align-items-center">
-                <i class="fas fa-envelope text-primary me-3"></i>
-                <p class="text-white mb-0">info@example.com</p>
+                <i class="far fa-envelope fa-lg"></i>
+                <p class="text-white mb-0">&nbsp; &nbsp; info@example.com</p>
               </div>
               <div class="d-flex align-items-center">
-                <i class="fa fa-phone-alt text-primary me-3"></i>
-                <p class="text-white mb-0">(+012) 3456 7890</p>
+                <i class="fas fa-phone-alt fa-lg"></i>
+
+                <p class="text-white mb-0">&nbsp; &nbsp; (+012) 3456 7890</p>
               </div>
+              <!-- 
               <div class="d-flex align-items-center mb-4">
                 <i class="fab fa-firefox-browser text-primary me-3"></i>
                 <p class="text-white mb-0">Yoursite@ex.com</p>
               </div>
+              -->
               <div class="d-flex">
                 <a
                   class="btn btn-primary btn-sm-square rounded-circle me-3"

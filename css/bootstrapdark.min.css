@@ -6821,6 +6821,20 @@ fieldset:disabled .btn {
   font-style: normal;
   font-size: xx-large;
 }
+.icon-primary {
+  color: #4168f2 !important;
+  font-family: "Roboto", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 4vh;
+}
+.text-custom1 {
+  color: white !important;
+  font-family: "Roboto", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: xx-large;
+}
 .text-secondary {
   color: #17303b !important;
 }

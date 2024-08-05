@@ -128,12 +128,14 @@
       >
         <a href="" class="navbar-brand p-0">
           <div id="headingtop">
-            <img src="img/b2logo.png" alt="Logo" height="300%" width="140%" />
-            <div class="heading">
-              <h3 class="text-primary"></h3>
-            </div>
+            <img
+              src="img/b2logo.png"
+              id="logoimg"
+              alt="Logo"
+              height="100vh"
+              width="200px"
+            />
           </div>
-          <!-- <img src="img/logo.png" alt="Logo"> -->
         </a>
         <button
           class="navbar-toggler"
@@ -145,58 +147,66 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="navbar-nav ms-auto py-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="index.html" class="nav-item nav-link active">Home</a>
             <a href="about.html" class="nav-item nav-link">About</a>
             <a href="service.html" class="nav-item nav-link">Services</a>
-            <a href="blog.html" class="nav-item nav-link">Blogs</a>
-            <div class="nav-item dropdown">
-              <a href="#" class="nav-link active" data-bs-toggle="dropdown">
-                <span class="dropdown-toggle">Pages</span>
-              </a>
-              <div class="dropdown-menu m-0">
-                <a href="feature.html" class="dropdown-item active"
-                  >Our Features</a
-                >
-                <a href="team.html" class="dropdown-item">Our team</a>
-                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                <a href="offer.html" class="dropdown-item">Our offer</a>
-                <a href="FAQ.html" class="dropdown-item">FAQs</a>
-                <a href="404.html" class="dropdown-item">404 Page</a>
-              </div>
+            <a href="team.html" class="nav-item nav-link">Our team</a>
+            <a href="offer.html" class="nav-item nav-link">Our offer</a>
+            <a href="FAQ.html" class="nav-item nav-link">FAQs</a>
+            <!-- 
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+              <span class="dropdown-toggle">Pages</span>
+            </a>
+            <div class="dropdown-menu m-0">
+             <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                    <a href="404.html" class="dropdown-item">404 Page</a>
+                         <a href="blog.html" class="nav-item nav-link">Blogs</a>
+                             <a href="feature.html" class="dropdown-item">Our Features</a>
+           
             </div>
-            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
           </div>
-          <a
-            href="#"
-            class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0"
-            >Get Started</a
-          >
+             -->
+            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+            <a href="http://">
+              <input type="checkbox" id="dark-mode" class="input nav-item" />
+              <label for="dark-mode" class="labelbutton">
+                <div class="circleofbutton"></div>
+              </label>
+            </a>
+            <script src="theameswitcher.js"></script>
+
+            <!-- 
+          <button id="theme-switcher" class="custom-btn btn-12">
+            <span id="theme-spanner1" class="darkbutton">Click Me</span
+            ><span id="theme-spanner2" class="darkbutton">Change Theme?</span>
+          </button>
+-->
+          </div>
         </div>
       </nav>
-
-      <!-- Header Start -->
-      <div class="container-fluid bg-breadcrumb">
-        <div class="container text-center py-5" style="max-width: 900px">
-          <h4
-            class="text-white display-4 mb-4 wow fadeInDown"
-            data-wow-delay="0.1s"
-          >
-            Our Features
-          </h4>
-          <ol
-            class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown"
-            data-wow-delay="0.3s"
-          >
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Pages</a></li>
-            <li class="breadcrumb-item active text-primary">Feature</li>
-          </ol>
-        </div>
-      </div>
-      <!-- Header End -->
     </div>
     <!-- Navbar & Hero End -->
-
+ <!-- Header Start -->
+ <div class="container-fluid bg-breadcrumb">
+  <div class="container text-center py-5" style="max-width: 900px">
+    <h4
+      class="text-white display-4 mb-4 wow fadeInDown"
+      data-wow-delay="0.1s"
+    >
+      Our Services
+    </h4>
+    <ol
+      class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown"
+      data-wow-delay="0.3s"
+    >
+      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+      <!--   <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
+      <li class="breadcrumb-item active text-primary">Our Services</li>
+    </ol>
+  </div>
+</div>
+<!-- Header End -->
     <!-- Features Start -->
     <div class="container-fluid feature py-5">
       <div class="container py-5">

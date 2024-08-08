@@ -607,11 +607,12 @@ progress {
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
-  display: flex;
+  display:flex;
   flex-wrap: wrap;
   margin-top: calc(var(--bs-gutter-y) * -1);
   margin-right: calc(var(--bs-gutter-x) / -2);
   margin-left: calc(var(--bs-gutter-x) / -2);
+  justify-content: center;
 }
 .row > * {
   flex-shrink: 0;
@@ -4963,7 +4964,7 @@ fieldset:disabled .btn {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 30vw;
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;

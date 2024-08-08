@@ -22,6 +22,10 @@ body {
   height: 20px;
   width: 40px;
 }
+.sectioncard figcaption.outline-text {
+  outline-color: red;
+  outline-width: 2px;
+}
 .phonenum {
   color: aliceblue;
 }
@@ -289,7 +293,7 @@ body {
 }
 .navbar-brand img {
   height: 180%;
-  width: 140%;
+  width: 120%;
 }
 .navbar .dropdown-toggle::after {
   border: none;

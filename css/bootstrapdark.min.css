@@ -18,6 +18,9 @@
   font-weight: 400;
   font-style: normal;
 }
+.text-gray{
+  color: var(--bs-gray-dark);
+}
 
 :root {
   --bs-blue: #0d6efd;
@@ -304,6 +307,7 @@ th {
 }
 label {
   display: inline-block;
+  color: var(--bs-gray-dark);
 }
 button {
   border-radius: 0;
@@ -6897,6 +6901,35 @@ fieldset:disabled .btn {
 .bg-light {
   background-color: #f8f8f8 !important;
 }
+.gradient-stripes {
+  background: linear-gradient(to right, black, white);
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    blue 10px,
+    blue 20px
+  );
+}
+.gradient-dots {
+  background: linear-gradient(to right, black, blue);
+  position: relative;
+}
+
+.gradient-dots::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, white 5%, transparent 5%),
+              radial-gradient(circle, white 5%, transparent 5%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  opacity: 0.5;
+}
+
 .bg-blackgrad {
   background-color: linear-gradient(to right, #232526, #414345) !important;
 }

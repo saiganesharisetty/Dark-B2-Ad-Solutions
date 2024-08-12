@@ -1269,7 +1269,7 @@ body {
   height: 10vh;
 }
 .footer {
-  background: var(--bs-secondary);
+  background: #111a1e;
 }
 
 .footer .footer-item {

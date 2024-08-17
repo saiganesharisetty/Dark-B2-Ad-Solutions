@@ -12,6 +12,9 @@ body {
 }
 /*** Spinner Start ***/
 /*** Spinner ***/
+.crasicons {
+  margin-top: 2%;
+}
 #spinner {
   opacity: 0;
   visibility: hidden;
@@ -818,8 +821,9 @@ body {
   margin: 10px 0 0;
 }
 .servicesection {
-  /*margin-left: 40vh;*/
+  /* margin-left: 40vh; */
   margin-top: 2vh;
+  width: 80vw;
 }
 
 /*** Service End ***/

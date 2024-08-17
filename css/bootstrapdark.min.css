@@ -3263,7 +3263,7 @@ fieldset:disabled .btn {
     padding-left: 0.4rem !important;
   }
   .mb-4 {
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 1rem !important;
     color: wheat;
   }
   .mb-5 {
@@ -3275,6 +3275,7 @@ fieldset:disabled .btn {
     font-weight: 500;
     font-style: normal;
     font-size: x-large;
+    margin-top: -10vw;
   }
   .header-carousel .header-carousel-item .carousel-caption {
     padding-top: 0px;
@@ -3305,7 +3306,7 @@ fieldset:disabled .btn {
     margin-bottom: 20px;
   }
   .servicesection {
-    /* margin-left: 40vh; */
+    margin-left: -6vh;
     margin-top: 2vh;
     display: flex;
     flex-direction: column;
@@ -3314,7 +3315,61 @@ fieldset:disabled .btn {
     justify-content: center;
     align-items: center;
   }
+  .custom-btn2 {
+    width: 130px;
+    height: 40px;
+    color: #0f2027;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .btn-11 {
+    border: none;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    color: linear-gradient(90deg, #3a47d5 0%, #00d2ff 100%);
+    overflow: hidden;
+    margin-left: 13vw;
+  }
+  .accordion-item {
+    background-color: var(--bs-blackgrad);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    width: 90vw;
+  }
+  .p-5 {
+    padding: 0rem !important;
+  }
+  .cardofsection {
+    container-type: size;
+    inline-size: 100%;
+    block-size: 100%;
+    text-decoration: none;
+    /* min-block-size: 280px; */
+    position: relative;
+    border-radius: 20px;
+  }
+  .serviceblocks {
+    margin-top: -12vh;
+    margin-bottom: -30vh;
+  }
+  .servicesection img {
+    border-radius: 20px;
+    margin-bottom: 3vh;
+  }
 }
+
 @media (min-width: 576px) {
   .dropdown-menu-sm-start {
     --bs-position: start;
@@ -4250,10 +4305,7 @@ fieldset:disabled .btn {
 .accordion-header {
   margin-bottom: 0;
 }
-.accordion-item {
-  background-color: var(--bs-blackgrad);
-  border: 1px solid rgba(0, 0, 0, 0.125);
-}
+
 .accordion-item:first-of-type {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -6651,9 +6703,7 @@ fieldset:disabled .btn {
 .p-4 {
   padding: 1.5rem !important;
 }
-.p-5 {
-  padding: 3rem !important;
-}
+
 .px-0 {
   padding-right: 0 !important;
   padding-left: 0 !important;
@@ -6787,13 +6837,42 @@ fieldset:disabled .btn {
   .fs-5 {
     font-size: 1.25rem !important;
   }
+  .accordion-item {
+    background-color: var(--bs-blackgrad);
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+  .btn-11 {
+    border: none;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    color: linear-gradient(90deg, #3a47d5 0%, #00d2ff 100%);
+    overflow: hidden;
+    margin-left: 4vw;
+  }
+  .custom-btn2 {
+    width: 130px;
+    height: 40px;
+    color: #0f2027;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
 
+    outline: none;
+  }
   .px-4 {
     padding-right: 1.5rem !important;
     padding-left: 1.5rem !important;
   }
   .mb-5 {
     margin-bottom: 3rem !important;
+  }
+  .p-5 {
+    padding: 3rem !important;
   }
   .text-custom1 {
     color: white !important;
@@ -6827,6 +6906,7 @@ fieldset:disabled .btn {
     padding-bottom: 3rem !important;
   }
 }
+
 .fs-6 {
   font-size: 1rem !important;
 }

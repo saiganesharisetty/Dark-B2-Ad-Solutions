@@ -132,10 +132,24 @@ function sendEmail() {
   const phone = encodeURIComponent(document.getElementById("phone").value);
   const subject = encodeURIComponent(document.getElementById("subject").value);
   const project = encodeURIComponent(document.getElementById("project").value);
-
   const message = encodeURIComponent(document.getElementById("message").value);
 
-  const mailtoLink = `mailto:b2adsolutions@gmail.com?subject=${subject}&body=Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0A%0AMessage:%0A${message}`;
+  const mailtoLink = `mailto:b2adsolutions@gmail.com?subject=${subject}&body=Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0A%0AMessage:%0A${message}%0A%0AProject:%0A${project}`;
 
-  window.location.href = mailtoLink;
+  // Create an invisible link
+  const link = document.createElement("a");
+  link.href = mailtoLink;
+  link.style.display = "none";
+  document.body.appendChild(link);
+
+  // Attempt to open the mailto link
+  link.click();
+
+  // Remove the link from the document
+  document.body.removeChild(link);
+
+  // Display notification if the link is not opened
+  setTimeout(() => {
+    document.getElementById("notification").style.display = "block";
+  }, 1000);
 }

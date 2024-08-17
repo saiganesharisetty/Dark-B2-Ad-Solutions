@@ -14,7 +14,11 @@
   height: auto;
   width: auto;
 }
-
+.notification {
+  display: none;
+  color: red;
+  margin-top: 10px;
+}
 #spinner.show {
   transition: opacity 0.5s ease-out, visibility 0s linear 0s;
   visibility: visible;

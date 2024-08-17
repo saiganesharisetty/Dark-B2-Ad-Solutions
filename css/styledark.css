@@ -430,7 +430,7 @@ body {
   height: 60px;
   border-radius: 60px;
   background: var(--bs-primary);
-  color: var(--bs-dark);
+  color: var(--bs-light);
   font-size: 26px;
   display: flex;
   align-items: center;
@@ -440,9 +440,10 @@ body {
 
 .header-carousel .owl-nav .owl-prev {
   bottom: 30px;
-  left: 30px;
+  right: 30px;
   margin-left: 90px;
 }
+
 .header-carousel .owl-nav .owl-next {
   bottom: 30px;
   left: 30px;
@@ -471,16 +472,48 @@ body {
     padding-top: 45px;
   }
 }
+@media (max-width: 320px) {
+  .header-carousel .header-carousel-item .carousel-caption {
+    padding-top: 0px;
+  }
+
+  .graditext {
+    background: linear-gradient(to right, #0c113a, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+    font-size: 30px;
+    text-align: left;
+    animation: gradient-rotate 5s infinite linear;
+    background-size: 200% 200%;
+  }
+}
 
 @media (max-width: 767px) {
+  .header-carousel .owl-nav .owl-prev,
+  .header-carousel .owl-nav .owl-next {
+    position: absolute;
+    width: 40px;
+    border-radius: 60px;
+    background: var(--bs-dark);
+    color: var(--bs-light);
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+
   .header-carousel .owl-nav .owl-prev {
-    left: 50%;
+    left: 20%;
+    top: 91%;
     transform: translateX(-50%);
     margin-left: -45px;
   }
 
   .header-carousel .owl-nav .owl-next {
-    left: 50%;
+    left: 80%;
+    top: 91%;
     transform: translateX(-50%);
     margin-left: 45px;
   }
@@ -1027,16 +1060,6 @@ body {
   text-align: center;
 }
 
-.graditext {
-  background: linear-gradient(to right, #0c113a, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: 100%;
-  font-size: 40px;
-  text-align: left;
-  animation: gradient-rotate 5s infinite linear;
-  background-size: 200% 200%;
-}
 .graditext2 {
   background: linear-gradient(to right, #0c113a, #ffffff);
   -webkit-background-clip: text;
@@ -1267,6 +1290,12 @@ body {
 /*** Footer Start ***/
 .footerlogo {
   height: 10vh;
+}
+.notification {
+  display: none;
+  color: red;
+  margin-top: 10px;
+  background-color: #111a1e;
 }
 .footer {
   background: #111a1e;

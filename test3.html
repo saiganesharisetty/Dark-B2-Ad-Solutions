@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Patterns</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ccc;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .gradient-stripes {
+        background: linear-gradient(to right, black, white);
+        background-image: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 10px,
+          blue 10px,
+          blue 20px
+        );
+      }
+
+      .gradient-rings {
+        background: linear-gradient(to right, black, blue);
+        position: relative;
+      }
+
+      .gradient-rings::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, white 20%, transparent 20%),
+          radial-gradient(circle, white 20%, transparent 20%),
+          radial-gradient(circle, white 20%, transparent 20%);
+        background-size: 50px 50px;
+        background-position: 0 0, 25px 25px, 50px 50px;
+        opacity: 0.5;
+      }
+
+      .gradient-dots {
+        background: linear-gradient(to right, black, blue);
+        position: relative;
+      }
+
+      .gradient-dots::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, white 5%, transparent 5%),
+          radial-gradient(circle, white 5%, transparent 5%);
+        background-size: 20px 20px;
+        background-position: 0 0, 10px 10px;
+        opacity: 0.5;
+      }
+
+      .gradient-stripes-blue {
+        background: linear-gradient(to right, white, blue);
+        background-image: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 10px,
+          black 10px,
+          black 20px
+        );
+      }
+
+      .bw-gradient-shapes {
+        background: linear-gradient(to right, black, white);
+        position: relative;
+      }
+
+      .bw-gradient-shapes::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, blue 20%, transparent 20%),
+          radial-gradient(circle, blue 20%, transparent 20%),
+          radial-gradient(circle, blue 20%, transparent 20%);
+        background-size: 50px 50px;
+        background-position: 0 0, 25px 25px, 50px 50px;
+        opacity: 0.5;
+      }
+
+      .blue-white-rings {
+        background: linear-gradient(to right, blue, white);
+        position: relative;
+      }
+
+      .blue-white-rings::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, black 10%, transparent 10%),
+          radial-gradient(circle, black 10%, transparent 10%);
+        background-size: 50px 50px;
+        background-position: 0 0, 25px 25px;
+        opacity: 0.5;
+      }
+
+      .black-blue-shapes {
+        background: linear-gradient(to right, black, blue);
+        position: relative;
+      }
+
+      .black-blue-shapes::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, white 20%, transparent 20%),
+          radial-gradient(circle, white 20%, transparent 20%),
+          radial-gradient(circle, white 20%, transparent 20%);
+        background-size: 100px 100px;
+        background-position: 0 0, 50px 50px, 100px 100px;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box gradient-stripes">Black to White with Blue Stripes</div>
+      <div class="box gradient-rings">
+        Blue and Black Gradient with White Rings
+      </div>
+      <div class="box gradient-dots">Black to Blue with White Dots</div>
+      <div class="box gradient-stripes-blue">
+        White to Blue with Black Stripes
+      </div>
+      <div class="box bw-gradient-shapes">Black and White with Blue Shapes</div>
+      <div class="box blue-white-rings">Blue to White with Black Rings</div>
+      <div class="box black-blue-shapes">
+        Black and Blue Gradient with White Gradient Shapes
+      </div>
+    </div>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Text</title>
+  <style>
+    .gradient-text {
+      font-size: 2rem;
+      font-weight: bold;
+      background: linear-gradient(to right, black, white);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .blue-black-text {
+      font-size: 2rem;
+      font-weight: bold;
+      background: linear-gradient(to right, black, blue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .blue-white-text {
+      font-size: 2rem;
+      font-weight: bold;
+      background: linear-gradient(to right, blue, white);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .black-blue-text {
+      font-size: 2rem;
+      font-weight: bold;
+      background: linear-gradient(to right, black, blue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .white-dots-text {
+      font-size: 2rem;
+      font-weight: bold;
+      position: relative;
+      background: linear-gradient(to right, black, blue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .white-dots-text::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, white 5%, transparent 5%),
+                  radial-gradient(circle, white 5%, transparent 5%);
+      background-size: 20px 20px;
+      background-position: 0 0, 10px 10px;
+      opacity: 0.5;
+      pointer-events: none;
+      mix-blend-mode: overlay;
+    }
+
+    .black-stripes-text {
+      font-size: 2rem;
+      font-weight: bold;
+      background: linear-gradient(to right, white, blue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+    }
+
+    .black-stripes-text::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 10px,
+        black 10px,
+        black 20px
+      );
+      mix-blend-mode: overlay;
+    }
+
+    .blue-shapes-text {
+      font-size: 2rem;
+      font-weight: bold;
+      position: relative;
+      background: linear-gradient(to right, black, white);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .blue-shapes-text::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, blue 20%, transparent 20%),
+                  radial-gradient(circle, blue 20%, transparent 20%),
+                  radial-gradient(circle, blue 20%, transparent 20%);
+      background-size: 50px 50px;
+      background-position: 0 0, 25px 25px, 50px 50px;
+      opacity: 0.5;
+      mix-blend-mode: overlay;
+    }
+  </style>
+</head>
+<body>
+  <div class="gradient-text">Black to White Gradient Text</div>
+  <div class="blue-black-text">Blue to Black Gradient Text</div>
+  <div class="blue-white-text">Blue to White Gradient Text</div>
+  <div class="black-blue-text">Black to Blue Gradient Text</div>
+  <div class="white-dots-text">Black to Blue with White Dots Text</div>
+  <div class="black-stripes-text">White to Blue with Black Stripes Text</div>
+  <div class="blue-shapes-text">Black and White with Blue Shapes Text</div>
+</body>
+</html>
+<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3479.303063875487!2d78.38962177516613!3d17.43974298345638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDI2JzIzLjEiTiA3OMKwMjMnMzEuOSJF!5e1!3m2!1sen!2sin!4v1723442167371!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <style>
+        .notification {
+            display: none;
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form id="contactForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <button type="button" onclick="sendEmail()">Submit</button>
+    </form>
+
+    <div id="notification" class="notification">Your local email client is not available. Please check your email settings.</div>
+
+    <script>
+        function sendEmail() {
+            const name = encodeURIComponent(document.getElementById('name').value);
+            const email = encodeURIComponent(document.getElementById('email').value);
+            const phone = encodeURIComponent(document.getElementById('phone').value);
+            const subject = encodeURIComponent(document.getElementById('subject').value);
+            const message = encodeURIComponent(document.getElementById('message').value);
+
+            const mailtoLink = `mailto:?subject=${subject}&body=Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0A%0AMessage:%0A${message}`;
+
+            // Attempt to open the mailto link
+            const link = document.createElement('a');
+            link.href = mailtoLink;
+            link.style.display = 'none'; // Hide the link
+            document.body.appendChild(link);
+
+            // Try to open the mailto link
+            link.click();
+
+            // Check if the link was opened
+            setTimeout(() => {
+                // Assuming that if the link hasn't been clicked within 1 second, it likely failed
+                document.getElementById('notification').style.display = 'block';
+                document.body.removeChild(link);
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .image-container {
+        position: relative;
+        width: 100%;
+        max-width: 600px; /* Adjust as needed */
+      }
+
+      .image-container img {
+        width: 100%;
+        height: auto;
+      }
+
+     
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        z-index: 2; /* Ensure the overlay is above the video */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img id="imgframe2" src="img/image_part_002.jpg" alt="Sample Image" />
+      <video class="hover-video" autoplay muted loop>
+        <source
+          src="https://videos.pexels.com/video-files/6706920/6706920-hd_1920_1080_25fps.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay">
+        <div>
+          <h1>Product Shoots</h1>
+          <p>Products shine with stunning photography</p>
+          <br />
+          <button class="custom-btn btn-6">
+            <span>Read More</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

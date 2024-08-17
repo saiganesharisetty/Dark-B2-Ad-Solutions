@@ -45,3 +45,15 @@ https://codepen.io/vainsan/pen/eYaYMpM
 https://codepen.io/christian-thorvik/details/jOooyBV
 
 https://codepen.io/HeyDreaw/pen/NRyLgw
+
+Parallax Flipping Cards
+https://codepen.io/nicolaspavlotsky/pen/wqGgLO
+
+scroll overflow crousel
+https://codepen.io/designcouch/pen/rNgpExP
+
+rating bar
+https://codepen.io/josetxu/pen/poYeWBp
+
+expand hover gallery
+https://codepen.io/TheMOZZARELLA/pen/bGJbPxE

@@ -58,11 +58,6 @@
   }
 }
 
-#aboutvid {
-  height: 80vh;
-  width: 40vh;
-}
-
 .custom-btn {
   width: 130px;
   height: 40px;
@@ -240,30 +235,7 @@
 }
 
 /* 11 */
-.custom-btn2 {
-  width: 130px;
-  height: 40px;
-  color: #0f2027;
-  border-radius: 20px;
-  padding: 10px 25px;
-  font-family: "Lato", sans-serif;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
 
-  outline: none;
-}
-
-.btn-11 {
-  border: none;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-  color: linear-gradient(90deg, #3a47d5 0%, #00d2ff 100%);
-  overflow: hidden;
-  margin-left: 4vw;
-}
 .btn-11:hover {
   text-decoration: none;
   color: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
